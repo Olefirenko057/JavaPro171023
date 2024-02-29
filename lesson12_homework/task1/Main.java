@@ -1,0 +1,25 @@
+package org.example.lesson12_homework.task1;
+
+import org.example.lesson12_homework.task1.Customer;
+import org.example.lesson12_homework.task1.Depot;
+
+public class Main {
+    public static void main(String[] args) {
+        Customer customer1 = new Customer("Albert",30);
+        customer1.requestBricks(5);
+
+        System.out.println();
+
+        Depot.getDepot().askForNewBricks(10);
+        customer1.requestBricks(5);
+        System.out.println(customer1.getStack());
+
+        System.out.println();
+
+        Customer customer2 = new Customer("Robert",45);
+        customer2.requestBricks(10);
+
+        System.out.println(customer1.getStack().size());
+        System.out.println(customer2.getStack().size());
+    }
+}
