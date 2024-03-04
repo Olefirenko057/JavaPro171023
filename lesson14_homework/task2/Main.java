@@ -38,35 +38,17 @@ public class Main {
     }
 
     public static boolean isNull(String word) {
-        Predicate<String> stringPredicate = (text) -> {
-            if (text != null) {
-                return true;
-            } else {
-                return false;
-            }
-        };
+        Predicate<String> stringPredicate = text -> text != null;
         return stringPredicate.test(word);
     }
 
     public static boolean isEmpty(String word) {
-        Predicate<String> stringPredicate = (text) -> {
-            if(text.length() > 0) {
-                return true;
-            } else {
-                return false;
-            }
-        };
+        Predicate<String> stringPredicate = text -> text.length() > 0;
         return stringPredicate.test(word);
     }
 
     public static boolean isEmptyAndIsNull(String word) {
-        Predicate<String> stringPredicate = (text) -> {
-            if(text.length() > 0 && text != null) {
-                return true;
-            } else {
-                return false;
-            }
-        };
+        Predicate<String> stringPredicate = text -> text.length() > 0 && text != null;
         return stringPredicate.test(word);
     }
 
