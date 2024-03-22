@@ -1,0 +1,28 @@
+  
+  466  mkdir -p  ~/ossp2022/lab2
+  467  cd ~/ossp2022/lab2
+  468  echo "1" > 1.txt
+       echo "2" >> 1.txt
+       echo "3" >> 1.txt
+       echo "4" >> 1.txt
+       echo "5" >> 1.txt
+       echo "6" >> 1.txt
+       echo "7" >> 1.txt
+       echo "8" >> 1.txt
+       echo "9" >> 1.txt
+  469  split -l 3 1.txt
+  470  cat xaa xab xac > 2.txt
+  471  cat 2.txt
+  472  ls -S -l
+  473  grep "1" 1.txt
+  474  ls -l 1.txt
+  475  chmod a+wx 1.txt
+  476  ls -l 1.txt
+  477  chmod a-wx 1.txt
+  478  ls -l 1.txt
+  479  tar -czvf asd.tar.gz ossp
+  480  gzip -d asd.tar.gz
+  481  tar -xvf asd.tar
+  482  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\n
+  483  mc
+  
